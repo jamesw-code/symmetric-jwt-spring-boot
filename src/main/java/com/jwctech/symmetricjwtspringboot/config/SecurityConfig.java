@@ -18,6 +18,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         //Allow all request for home page with permit all
                         .requestMatchers("/").permitAll()
+                        .requestMatchers("/api/auth").permitAll()
                         //AnyRequest is a catch-all for any request that doesn't match the above
                         .anyRequest().authenticated()
                 )

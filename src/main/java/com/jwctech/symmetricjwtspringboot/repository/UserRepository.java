@@ -1,0 +1,9 @@
+package com.jwctech.symmetricjwtspringboot.repository;
+
+import com.jwctech.symmetricjwtspringboot.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+}
